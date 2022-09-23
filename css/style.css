@@ -3,6 +3,7 @@
     --color-text: #535383;
     --color-button:#7259ef;
     --color-background:#64648F;
+    --color-border:#ECEFF9;
 }
 
 *,*::before, *::after {
@@ -101,4 +102,83 @@ p {
         width: 14rem;
     }
 
+}
+
+/* Input */
+
+
+
+
+
+.input__field {
+    width: 100%;
+    height: 5.5rem;
+    box-shadow: #00000021 0px 0.2em 0.5em inset, #80808033 0px 0px 0px 0px;
+    border: 1px solid var(--color-border);
+    border-radius: 4px ;
+    background-color: #fafafa;
+    padding-left: 1rem;
+    font-size: 1.5rem;
+}
+
+.input__field:focus {
+  border:1px solid var(--color-button);
+  outline:0 ;
+  box-shadow: #00000017 0px 0.2em 0.5em inset, #7259ef3d 0px 0px 0px 0.15em; 
+  transition: all 0.25s;
+  
+}
+::placeholder {
+    font-size: 1.5rem;
+    padding-left: 0.7rem;
+    
+    color: rgb(115, 115, 115) !important;
+    font-weight: 500;
+    
+}
+
+@media screen and (min-width: 768px) {
+    .input-group {
+        display: flex;
+        border: 1px solid var(--color-border);
+        box-shadow: #00000021 0px 0.3em 0.5em inset, #80808033 0px 0px 0px 0px;
+        background: #fafafa;
+    }
+    
+    .input__field {
+        width: 33.5rem;
+        height: 5rem;
+        border:0;
+        flex-grow: 1;
+    }
+}
+
+
+/* Button */
+
+.input__button {
+    height: 3.5rem;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    border: 1px solid ;
+    padding:0 1.5rem;
+    margin-top: 1.5rem;
+    
+}
+
+.button--color {
+    background: var(--color-button);
+    color: white
+}
+
+
+@media screen and (min-width: 768px) {
+
+
+    
+    .input__button {
+        margin-top:0.5rem;
+        height: 4rem;
+      
+    }
 }
