@@ -15,6 +15,11 @@
  text-shadow: none;
  }
 
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
 /* Typography */
 
 html {
@@ -50,6 +55,50 @@ p {
     }
     p {
         font-size: 3rem;
+    }
+
+}
+
+
+
+/* Svg Block */
+
+
+.image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 0;
+    
+
+}
+
+.image__content {
+    width: 17rem;
+}
+
+
+@media screen and (min-width: 768px){
+    
+    .image {
+        flex-direction: row;
+        justify-content: center;
+        gap: 1rem;
+    }
+    
+    .image__content {
+        width: 12rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    
+    .image {
+        gap:3rem
+    }
+
+    .image__content {
+        width: 14rem;
     }
 
 }
