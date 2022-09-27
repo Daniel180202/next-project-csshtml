@@ -244,7 +244,7 @@ p {
 }
 
 .article__image {
-   width: 30rem;
+   width: 45rem;
    margin-top: 4rem;
    padding-left:2rem ;
 }
@@ -253,130 +253,74 @@ p {
     text-decoration: none;
 }
 
-
-.article__content1::before {
+.article__anchor::before {
     content: '';
+    width: 3.5px;
     position: absolute;
-    left: 7%;
-    width: 3px;
-    height: 7.5rem;
-    background-color: #7259ef;
+    left: 6%; 
+    border-radius: 2px;
+    background-color: var(--color-button);
+    transition: opacity 0.2s ease, transform 0.2s ease-out;
+    transform: scaleY(0);
+    opacity: 0;  
 }
-.article__content2::before {
-    content: '';
-    position: absolute;
-    left: 7%;
-    width: 3px;
-    height: 5.9rem;
-    background-color: #7259ef;
-}
-.article__content3::before {
-    content: '';
-    position: absolute;
-    left: 7%;
-    width: 3px;
-    height:7.5rem;
-    background-color: #7259ef;
+    
+.article__anchor:hover::before {
+    opacity: 1;
+    transform: scaleY(1);
+    height: 8rem;
+    margin-top: 1rem;
 }
 
-@media screen and (min-width: 768px){
-    .article-block{
-        gap: 4rem;
-    }
-    .article__content1::before {
-        content: '';
-        position: absolute;
-        left: 3%;
-        width: 3px;
-        height: 8.5rem;
-        background-color: #7259ef;
-    }
-    .article__content2::before {
-        content: '';
-        position: absolute;
-        left: 3%;
-        width: 3px;
-        height: 7rem;
-        background-color: #7259ef;
-    }
-    .article__content3::before {
-        content: '';
-        position: absolute;
-        left: 3%;
-        width: 3px;
-        height:8rem;
-        background-color: #7259ef;
-    }
-    .article__image {
-        width: 40rem;
-        margin-top: 4rem;
-        padding-left:2rem ;
-     }
-}
+@media screen and (min-width: 600px){
+    .article__anchor::before {
+        left: 3 .6%;}
+} 
 
+
+@media screen and (min-width: 768px) {
+    .article__anchor::before {
+        left: 3%;
+        
+    }
+    .article__anchor:hover::before {
+        margin-top: 2rem;
+        height: 9rem;
+    }
+}
 @media screen and (min-width: 1024px) {
-    .article__content1::before {
-        content: '';
-        position: absolute;
-        left: 2.7%;
-        width: 3px;
-        height: 6.8rem;
-        background-color: #7259ef;
+    .article__anchor::before {
+        left:2.5%
     }
-    .article__content2::before {
-        content: '';
-        position: absolute;
-        left: 2.7%;
-        width: 3px;
-        height: 6.8rem;
-        background-color: #7259ef;
+    .article__anchor:hover::before {
+        
+        height: 6.7rem;
     }
-    .article__content3::before {
-        content: '';
-        position: absolute;
-        left: 2.7%;
-        width: 3px;
-        height:6.8rem;
-        background-color: #7259ef;
-    }
-    .article__image {
-        width: 45rem;
-        margin-top: 4rem;
-        padding-left:2rem ;
-     }
+
 }
+@media screen and (min-width: 1220px){
+    .article__anchor::before {
+        left: 6.6%;}
+} 
+@media screen and (min-width: 1330px){
+    .article__anchor::before {
+        left: 9%;}
+} 
+
 
 @media screen and (min-width: 1440px) {
-    .article__content1::before {
-        content: '';
-        position: absolute;
-        left: 12%;
-        width: 3px;
-        height: 6.8rem;
-        background-color: #7259ef;
+    .article__anchor::before {
+        left:12%
     }
-    .article__content2::before {
-        content: '';
-        position: absolute;
-        left: 12%;
-        width: 3px;
-        height: 6.8rem;
-        background-color: #7259ef;
-    }
-    .article__content3::before {
-        content: '';
-        position: absolute;
-        left: 12%;
-        width: 3px;
-        height:6.8rem;
-        background-color: #7259ef;
-    }
-    .article__image {
-        width: 45rem;
-        margin-top: 4rem;
-        padding-left:2rem ;
-     }
 }
+
+@media screen and (min-width: 1520px){
+    .article__anchor::before {
+        left: 14%;}
+} 
+
+
+
 
 /* Babuska article */
 
